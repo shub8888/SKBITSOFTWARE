@@ -1,79 +1,94 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>InstaWallet</title>
-  <style>
-    
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      background-color: #0047b3; 
-      font-family: 'Arial', sans-serif;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      user-select: none;
-    }
-
-    
-
-   
-    .logo {
-      font-weight: 900;
-      font-size: 3.5rem;
-      margin-bottom: 20px;
-      letter-spacing: 0.25rem;
-      user-select: none;
-      align-items: center;
-      
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-    }
-
-   
-    .title {
-      font-weight: 700;
-      font-size: 1.8rem;
-      margin-bottom: 8px;
-      user-select: none;
-    }
-
-   
-    .tagline{
-      color: aliceblue;
-      text-decoration: wavy;
-      text-align: center;
-      font-size: xx-small;
-      line-height: 0cqmax; 
-      text-indent: 70px;
-    }
-   
-    a.fullscreen-link {
-      display: block;
-      width: 100vw;
-      height: 100vh;
-      position: absolute;
-      top: 0;
-      left: 0;
-      text-decoration: none;
-    }
- </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostel Leave Management</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container" id="mainContainer" title="Click anywhere to login">
-    <div class="logo">W</div>
-    <div class="title">InstaWallet</div>
-    <div class="tagline">your growth partner</div>
+  <div class="navbar">
+    <div class="title">Hostel Leave Management</div>
+    <nav>
+      <a href="#">Dashboard</a>
+      <a href="#">Apply Leave</a>
+      <a href="#">History</a>
+      <a href="#">Notification</a>
+      <a href="#">Profile</a>
+    </nav>
   </div>
-  <a href="login.html" class="fullscreen-link" >
-</a>
-</script>
+
+  <div class="container">
+    <div class="left">
+      <div class="section-title">Student Dashboard</div>
+      <div class="subtitle">Your leave summary at a glance</div>
+
+      <div class="dashboard-cards">
+        <div class="card">
+          <img src="" alt="asas">
+          <h3>Leaves Taken</h3>
+          <p>04 Days</p>
+        </div>
+        <div class="card">
+          <img src="" alt="yep">
+          <h3>Pending Requests</h3>
+          <p>01 Request</p>
+        </div>
+      </div>
+
+      <a href="#" class="apply-btn">Apply for Leave</a>
+
+      <div class="quick-insights">
+        <div class="card">
+          <img src="" alt="leave">
+          <h3>Next Leave</h3>
+          <p>10<sup>th</sup> July</p>
+        </div>
+        <div class="card">
+           <img src="" alt="leave">
+          <h3>Approved Leaves</h3>
+          <p>03 Requests</p>
+        </div>
+        <div class="card">
+           <img src="" alt="leave">
+          <h3>Pending Leaves</h3>
+          <p>01 Request</p>
+        </div>
+        <div class="card">
+           <img src="" alt="leave">
+          <h3>Rejected Leaves</h3>
+          <p>01 Request</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="section-title">Recent Leave Activity</div>
+
+      <div class="activity-card">
+        <div class="activity-info">
+          <strong>Sick Leave</strong><br>
+          June 15 – June 15
+        </div>
+        <div class="badge approved">Approved</div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-info">
+          <strong>Sick Leave</strong><br>
+          May 09 – May 10
+        </div>
+        <div class="badge pending">Pending</div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-info">
+          <strong>Casual Leave</strong><br>
+          April 21 – April 21
+        </div>
+        <div class="badge rejected">Rejected</div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
